@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Aukaverkefni - miðannarverkefni - jons{% endblock %}
+{% block content %}
+<div class="wrapper">
+    {% for item in gig['results'] %}
+        <div class="box">
+        <h3>{{ item.eventDateName}}</h3>
+        <img src="{{ item,imageSource }}" title="{{ item.eventDataName}}">
+        <p>Hvar:{{ item.eventHellName }}</p>
+
+</div>
